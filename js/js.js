@@ -34,4 +34,10 @@ $(document).ready(function(){
                     }
             });
     });
+
+    $('.section').waypoint(function(){
+        $('this').addClass('active').siblings().removeClass('active');
+        console.log('toggle');
+    });
+
 });

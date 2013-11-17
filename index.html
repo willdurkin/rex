@@ -7,136 +7,95 @@
     <title>Rex Collective</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600' rel='stylesheet' type='text/css'>
+
  
 </head>
-
-<!--             tasks: 
-
-            create three slides
-            
-            create navigation menu
-            
-            navigation menu does scrollTo to each slide
-            
-            middle slide is wider to accomodate multple horizontal slides
-            
-            side scrolling is enabled on middle slide using localScroll. users can navigate using #subnav or
-            a sidecroll arrow. -->
+<div id='wrapper'>
  
 <body>
     <h1 id='title'>Rex Collective</h1>
         
         <ul id="navigation">
-                <li class="sup">
-                        <a href="#section1">Home</a>
+                <li>
+                    <img id='logo' src="images/newlogo.png">
                 </li>
-                <li class="sup">
-                        <a href="#section2">Collection</a>
-                        <ul>
-                                <li><a href="#section2b">Item 1</a></li>
-                                <li><a href="#section2c">Item 2</a></li>
-                                <li><a href="#section2d">Item 3</a></li><!--  create corresponding #section2d content section -->
-                        </ul>        
+                &nbsp;
+           
+                <li id='collection_nav' class="sup">
+                        <a href="#section2">COLLECTION</a>
+                           <!--  <ul>
+                                    <li><a href="#section2">Item 1</a></li>
+                                    <li ><a href="#section2b">Item 2</a></li>
+                                    <li ><a href="#section2c">Item 3</a></li>
+                            </ul>   -->      
                 </li>
-                <li class="sup">
-                        <a href="#section3">About Us</a>
+                <li id='about_nav' class="sup">
+                        <a href="#section3">ABOUT US</a>
                 </li>
         </ul>                                                                                                                        
         <div id="content">
-                <div class="section">
-                        <ul>
-                            <li class="sub" id="section1">
-                                <img class='bg' src="images/landing.png">
-                            </li>
-                        </ul>
-                </div>
+                
                 <div class="section">
                         <ul>
                             <li class="sub" id="section2" >
-                                <img class='bg' src="images/collection_1.png">
-                                <a href="#section2b" class="next">&gt;&gt;</a>        
+                                <img class='bg' src="images/alovesupreme.png">
+                                <a href="#section2b" class="next"><img src="images/arrow_right.png"></a>        
                             </li>
                             
                             <li class="sub" id="section2b">
+                                <img class='bg' src="images/collection.png">
+                                <a href="#section2" class="prev"><img src="images/arrow_left.png"></a>
+                                <a href="#section2c" class="next"><img src="images/arrow_right.png"></a>        
+                            </li>
+
+                            <li class="sub" id="section2c">
                                 <img class='bg' src="images/collection_2.png">
-                                <a href="#section2" class="prev">&lt;&lt;</a>
-                                <a href="#section2c" class="next">&gt;&gt;</a>        
+                                <a href="#section2b" class="prev"><img src="images/arrow_left.png"></a>
+                                <a href="#section2d" class="next"><img src="images/arrow_right.png"></a>        
+                            </li>
+
+                            <li class="sub" id="section2d">
+                                <img class='bg' src="images/collection_3.1.png">
+                                <a href="#section2c" class="prev"><img src="images/arrow_left.png"></a>
+                                <a href="#section2e" class="next"><img src="images/arrow_right.png"></a>        
+                            </li>
+
+                            <li class="sub" id="section2e">
+                                <img class='bg' src="images/collection_4.png">
+                                <a href="#section2d" class="prev"><img src="images/arrow_left.png"></a>
+                                <a href="#section2f" class="next"><img src="images/arrow_right.png"></a>        
+                            </li>
+
+                            <li class="sub" id="section2f">
+                                <img class='bg' src="images/collection_5.png">
+                                <a href="#section2e" class="prev"><img src="images/arrow_left.png"></a>
+                                <a href="#section2g" class="next"><img src="images/arrow_right.png"></a>        
+                            </li>
+
+                             <li class="sub" id="section2g">
+                                <img class='bg' src="images/collection_7.png">
+                                <a href="#section2f" class="prev"><img src="images/arrow_left.png"></a>
+                                <a href="#section2h" class="next"><img src="images/arrow_right.png"></a>        
                             </li>
                             
-                            <li class="sub" id="section2c">
-                                <img class='bg' src="images/collection_3.png">        
-                                <a href="#section2b" class="prev">&lt;&lt;</a>
+                            <li class="sub" id="section2h">
+                                <img class='bg' src="images/collection_6.1.png">        
+                                <a href="#section2g" class="prev"><img src="images/arrow_left.png"></a> <!-- &lt; is an arrow > -->
                             </li>
+
+
                         </ul>
                 </div>
                 <div class="section">
                         <ul>
                                 <li class="sub" id="section3">
-                                    <img class='bg' src="images/about.png">
-                                </li>
-                                <li class="sub" id="section3b">
-                                        <h2>Section 3-b</h2>
-                                        <p>Aliquam erat volutpat. Pellentesque cursus, vel dignissim dolor est eget ante. Pellentesque a purus. Proin quis arcu ut ipsum sollicitudin sollicitudin. In a neque. Mauris malesuada consectetuer metus. Etiam molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Nam gravida lacus. Etiam sem tortor, faucibus eget, iaculis euismod, molestie consequat, mauris. Phasellus consectetuer lobortis eros. Maecenas sit amet arcu. Morbi ut enim. Fusce sem augue, consectetuer in, tempus eu, dictum vel, felis. Praesent nisl tortor, aliquet a, fermentum ac, molestie vitae, libero.</p>
-                                        <p>Donec lacinia neque et justo. Vestibulum pretium semper tellus. Phasellus lacinia tristique purus. Sed magna est, auctor quis, egestas et, tristique id, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla non orci eu felis accumsan blandit. Nam condimentum. Sed quis lorem id erat feugiat vulputate.</p>
-                                        <a href="#section3" class="prev">&lt;&lt;</a>
-                                        <a href="#section3c" class="next">&gt;&gt;</a>        
-                                </li>
-                                <li class="sub" id="section3c">
-                                        <h2>Section 3-c</h2>
-                                        <p>Aliquam erat volutpat. Pellentesque cursus, pede vel molestie tempor, orci mauris pellentesque mauris. Etiam molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer scelerisque gravida libero. Nulla nisi massa, consequat nec, gravida sit amet, imperdiet in, est. Nam gravida lacus. Etiam sem tortor, faucibus eget, iaculis euismod, molestie consequat, mauris. Phasellus consectetuer lobortis eros. Maecenas sit amet arcu. Morbi ut enim. Fusce sem augue, consectetuer in, tempus eu, dictum vel, felis. Praesent nisl tortor, aliquet a, fermentum ac, molestie vitae, libero.</p>
-                                        <p>Donec lacinia neque et justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. ellentesque cursus, pede vel molestie tempor, orci mauris pellentesque mauris. Nulla non orci eu felis accumsan blandit. Nam condimentum. Quisque pulvinar. Cras nibh. Sed quis lorem id erat feugiat vulputate. </p>
-                                        <a href="#section3b" class="prev">&lt;&lt;</a>
-                                </li>                                                                
-                        </ul>
-                </div>
-                <div class="section">
-                        <ul>
-                                <li class="sub" id="section4">
-                                        <h2>Section 4</h2>
-                                        <p>Donec eu diam. Etiam pharetra pede id orci. Mauris tellus enim, ultrices in, vehicula sed, feugiat eget, pede. Vestibulum odio eros, viverra non, posuere sed, elementum blandit, nunc. Fusce sodales cursus nibh. Nam ut sem sed tortor lacinia aliquet. Donec lacus arcu, consectetuer non, dignissim eget, ultrices sed, ligula. Maecenas faucibus lobortis nibh. Ut viverra justo quis felis eleifend ultrices. Integer at magna ut lacus malesuada rutrum. Proin in odio a mi tincidunt faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam nisi massa, facilisis vitae, mollis et, ornare sit amet, dolor.</p>
-                                        <p>Quisque turpis eros. Vivamus ullamcorper, diam sit amet pharetra vehicula, sem nisi scelerisque ante, nec mattis risus augue non nulla. Donec elit dui, porttitor eget, ultricies vel, elementum gravida, urna. Aliquam erat volutpat. Mauris libero tellus, facilisis et, aliquet non, pulvinar sagittis, turpis. Quisque eu augue et dui lacinia gravida. Nam in massa a purus blandit mattis. Nulla facilisi.</p>
-                                        <a href="#section4b" class="next">&gt;&gt;</a>        
-                                </li>
-                                <li class="sub" id="section4b">
-                                        <h2>Section 4-b</h2>
-                                        <p>Donec eu diam. . Integer viverra ante quis nisi. Vestibulum odio eros, viverra non, posuere sed, elementum blandit, nunc. Fusce sodales cursus nibh. Nam ut sem sed tortor lacinia aliquet. Donec lacus arcu, consectetuer non, dignissim eget, ultrices sed, ligula. Maecenas faucibus lobortis nibh. Ut viverra justo quis felis eleifend ultrices. Integer at magna ut lacus malesuada rutrum. Proin in odio a mi tincidunt faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam nisi massa, facilisis vitae, mollis et, ornare sit amet, dolor.</p>
-                                        <p>Quisque turpis eros, blandit vitae, auctor vel, eleifend nec, nisl. Nam justo lacus, elementum vel, rhoncus ut, feugiat id, ante. Vivamus ullamcorper,Nec mattis risus augue non nulla. Donec elit dui, porttitor eget, ultricies vel, elementum gravida, urna. Aliquam erat volutpat. Mauris libero tellus, facilisis et, aliquet non, pulvinar sagittis, turpis. Quisque eu augue et dui lacinia gravida. Nam in massa a purus blandit mattis. Nulla facilisi.</p>
-                                        <a href="#section4" class="prev">&lt;&lt;</a>
-                                        <a href="#section4c" class="next">&gt;&gt;</a>        
-                                </li>
-                                <li class="sub" id="section4c">
-                                        <h2>Section 4-c</h2>
-                                        <p>Donec eu diam. Morbi molestie purus at velit. Morbi augue eros, eleifend nec, bibendum tempor, aliquet a, augue. Integer viverra ante quis nisi. Vestibulum odio eros, viverra non, posuere sed, elementum blandit, nunc. Fusce sodales cursus nibh. Nam ut sem sed tortor lacinia aliquet. Donec lacus arcu, consectetuer non, dignissim eget, ultrices sed, ligula. Maecenas faucibus lobortis nibh. Ut viverra justo quis felis eleifend ultrices. Integer at magna ut lacus malesuada rutrum. Proin in odio a mi tincidunt faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam nisi massa, facilisis vitae, mollis et, ornare sit amet, dolor.</p>
-                                        <p>Quisque turpis eros, blandit vitae, auctor vel, eleifend nec, nisl. Nec mattis risus augue non nulla. Donec elit dui, porttitor eget, ultricies vel, elementum gravida, urna. Aliquam erat volutpat. Mauris libero tellus, facilisis et, aliquet non, pulvinar sagittis, turpis. Quisque eu augue et dui lacinia gravida. Nam in massa a purus blandit mattis. Nulla facilisi.</p>
-                                        <a href="#section4b" class="prev">&lt;&lt;</a>
-                                </li>
-                        </ul>
-                </div>
-                <div class="section">
-                        <ul>
-                                <li class="sub" id="section5">
-                                        <h2>Section 5</h2>
-                                        <p>Fusce sit amet nibh sit amet libero pretium rutrum. Phasellus arcu. Donec turpis lorem, eleifend ut, cursus at, lacinia eget, dolor. Vivamus pulvinar sollicitudin ante. Nulla eu mauris sollicitudin urna fermentum tincidunt. Mauris placerat leo ut quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed in risus. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas enim. Suspendisse odio odio, cursus ut, egestas eget, lobortis eget, magna.</p>
-                                        <p>Maecenas ultrices lectus facilisis metus. Fusce imperdiet. Aenean bibendum magna a neque. Aenean vel tellus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce gravida, magna non pellentesque interdum, felis odio eleifend ligula, et luctus dolor mi et diam. Vivamus varius nisl sed enim. Sed ultricies fermentum urna.</p>
-                                        <a href="#section5b" class="next">&gt;&gt;</a>        
-                                </li>
-                                <li class="sub" id="section5b">
-                                        <h2>Section 5-b</h2>
-                                        <p>Fusce sit amet nibh sit amet libero pretium rutrum. Nam iaculis enim ac ipsum. Donec turpis lorem, eleifend ut, cursus at, lacinia eget, dolor. Vivamus pulvinar sollicitudin ante. Nulla eu mauris sollicitudin urna fermentum tincidunt. Mauris placerat leo ut quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed in risus. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas enim. Suspendisse odio odio, cursus ut, egestas eget, lobortis eget, magna.</p>
-                                        <p>Maecenas ultrices lectus facilisis metus. Nunc nec elit vitae lectus posuere aliquam. Integer id justo nec elit varius blandit. Aenean vel tellus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce gravida, magna non pellentesque interdum, felis odio eleifend ligula, et luctus dolor mi et diam. Vivamus varius nisl sed enim. Sed ultricies fermentum urna.</p>
-                                        <a href="#section5" class="prev">&lt;&lt;</a>
-                                        <a href="#section5c" class="next">&gt;&gt;</a>        
-                                </li>
-                                <li class="sub" id="section5c">
-                                        <h2>Section 5-c</h2>
-                                        <p>Fusce sit amet nibh sit amet libero pretium rutrum. Phasellus arcu. Morbi justo purus, pellentesque ac, fringilla at, adipiscing non, dolor. Suspendisse imperdiet lorem. Nam iaculis enim ac ipsum.  Nulla eu mauris sollicitudin urna fermentum tincidunt. Mauris placerat leo ut quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed in risus. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas enim. Suspendisse odio odio, cursus ut, egestas eget, lobortis eget, magna.</p>
-                                        <p>Maecenas ultrices lectus facilisis metus. Nunc nec elit vitae lectus posuere aliquam. Integer id justo nec elit varius blandit. Aenean vel tellus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce gravida, magna non pellentesque interdum, felis odio eleifend ligula, et luctus dolor mi et diam. Vivamus varius nisl sed enim. Sed ultricies fermentum urna.</p>
-                                        <a href="#section5b" class="prev">&lt;&lt;</a>
+                                    <img class='bg' src="images/newaboutpage.png">
                                 </li>
                         </ul>
                 </div>
         </div>
-
+</div> <!-- end wrapper -->
 <!-- Load jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
  
@@ -145,6 +104,7 @@
  
     <!-- Load LocalScroll -->
     <script src="js/jquery.localscroll-1.2.7-min.js"></script> 
+    <script type="text/javascript" src='js/waypoints.min.js'></script>
     <script type="text/javascript" src='js/js.js'></script>
 </body>
 </html>

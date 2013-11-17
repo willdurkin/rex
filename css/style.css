@@ -1,7 +1,19 @@
+@font-face {
+font-family: Futura;
+src: url('images/Futura.ttc'),
+}
+
 body{ 
         padding: 0 5px;
-        font-family: Verdana, sans-serif;
-        background-color: #DDD;
+        font-family: 'Josefin Sans', Verdana, sans-serif;
+        background-color: #fff;
+
+}
+
+#wrapper {
+        min-width: 1200px;
+        display: block;
+        overflow: hidden;
 }
 
 ul, li, h3, h2, h1, p, #navigation, #content,.section{
@@ -20,14 +32,12 @@ ul, li, h3, h2, h1, p, #navigation, #content,.section{
         width:900px;
         background-color:white;
         position:relative;
-        height:700px;
+        height:650px;
         float:left;
-}
-
-.bg {
-        width: 900px;
 
 }
+
+
 
 #content h2{
         color:#993333;
@@ -35,48 +45,73 @@ ul, li, h3, h2, h1, p, #navigation, #content,.section{
 }
 
 #content a{
-        color:#777;
+        color:#1d1e19;
         font-weight:bolder;
         text-decoration:none;
 }
-#navigation{
+#navigation{        
         float:left;
-        width:110px;
+        width:200px;
         height:400px;
-        background-color:#5B739C;
+        background-color:#fff;
+        text-align: right;
+        margin-left: 20px;
 }
+
+#logo {
+        width: 200px;
+}
+
+.active {
+        /*text-decoration: underline;*/
+}
+
+
 #navigation .sup{
-        margin:26px 10px;
-        font-size:14px;
+        margin:10px 10px;
+        
 }
 #navigation ul{
         margin:5px 0;
         list-style:circle;
         padding-left:15px;                                                
 }
+
 #navigation a{
-        color:white;
-        font-weight:bolder;
+        color:black;
+        font-family: Futura, 'Josefin Sans';
+        font-weight: 200;
+        font-size:18px;
         text-decoration:none;
 }                                
 #navigation .sup li{
         margin: 3px 0 !important;
         margin:-4px 0;
-        font-size:10px;
+        font-size:15px;
 }
+
+#navigation a:hover {
+        text-decoration: underline;
+}
+
 #navigation a.scrolling{
         color:#933;
 }
+
+.bg {
+        width: 800px;
+        padding-left: 35px;
+}
+
 .section{
         width:10000px;
-        height: 700px;
+        height: 650px;
         position:relative;
 }
                 
 .section .sub{
         position:relative;
         float:left;
-        
         width:900px;
         height:600px;
 }
@@ -97,7 +132,7 @@ ul, li, h3, h2, h1, p, #navigation, #content,.section{
         right:30px;
 }
 .section .prev{
-        left:30px;
+        left:0px;
 }
                 
 #links, h2.title{
