@@ -1,11 +1,11 @@
 @font-face {
-font-family: Futura;
-src: url('images/Futura.ttc'),
+font-family: futura;
+src: url('images/futura.ttc'),
 }
 
 body{ 
         padding: 0 5px;
-        font-family: 'Josefin Sans', Verdana, sans-serif;
+        font-family: Allerta, 'Josefin Sans', Verdana, sans-serif;
         background-color: #fff;
 
 }
@@ -79,11 +79,14 @@ ul, li, h3, h2, h1, p, #navigation, #content,.section{
 
 #navigation a{
         color:black;
-        font-family: Futura, 'Josefin Sans';
+        font-family: Allerta, 'Josefin Sans';
         font-weight: 200;
         font-size:18px;
         text-decoration:none;
-}                                
+        letter-spacing: 2px;
+}
+
+
 #navigation .sup li{
         margin: 3px 0 !important;
         margin:-4px 0;
@@ -99,7 +102,7 @@ ul, li, h3, h2, h1, p, #navigation, #content,.section{
 }
 
 .bg {
-        width: 800px;
+        width: 790px;
         padding-left: 35px;
 }
 
@@ -193,3 +196,35 @@ h2.title{
         top:28px;
         color:#933;
 }
+
+#text {
+        height: 400px;
+        width: 250px;
+        position: relative;
+        top: -630px;
+        left: 430px;
+        font-family: Allerta;
+        color: white;
+        font-size: 18px;
+}
+#text p {
+        width: 350px;
+        margin-bottom: -10px;
+        text-align: right;
+}
+
+#contact {
+        text-align: right;
+        position: relative;
+        margin-bottom: -5px;
+}
+
+#contact a{
+        color: white;
+        font-size: 14px;
+}
+
+
+
+
+
