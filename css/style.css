@@ -68,7 +68,7 @@ ul, li, h3, h2, h1, p, #navigation, #content,.section{
 
 
 #navigation .sup{
-        margin:10px 10px;
+        margin:10px 0px;
         
 }
 #navigation ul{
@@ -124,6 +124,7 @@ ul, li, h3, h2, h1, p, #navigation, #content,.section{
         width:550px;
         margin:16px 0;
         font-size: 16px;
+        line-
         
 }
 .section .next, .section .prev{
@@ -149,7 +150,6 @@ ul, li, h3, h2, h1, p, #navigation, #content,.section{
         border:1px solid #777;
         width:210px;
         top:78px;
-        padding:10px;
 }
 
 #links h3{
@@ -213,6 +213,7 @@ h2.title{
         width: 350px;
         margin-bottom: -10px;
         text-align: right;
+        letter-spacing: 1px;
 }
 
 #contact {
@@ -226,7 +227,10 @@ h2.title{
         font-size: 14px;
 }
 
-
+#section4 iframe{
+        overflow-y: scroll;
+        padding-left: 40px;
+}
 
 
 
